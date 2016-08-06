@@ -27,5 +27,5 @@ class Page(object):
         return self.image
 
     def save(self,path):
-        self.image.save(path,"PNG")
+        self.image.save(path,"PNG",compress_level=0)
 

@@ -62,4 +62,6 @@ if __name__ == "__main__":
     catalog.insertPocThumbnails(getPaths("./images/poc/sun-Pc6*"))
     catalog.save('./build/booth_catalog')
 
+    print("* Catalog is done. Begin zipping")
+
     subprocess.call("zip -r build/catalog.zip ./build/booth_catalog",shell=True)
